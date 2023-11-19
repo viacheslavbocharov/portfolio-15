@@ -1,0 +1,62 @@
+.welcome {
+  padding: 96px 0;
+  padding-right: 18px;
+  background: $section-bg;
+  @include mobile {
+    padding-right: 0;
+    padding: 60px 0;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    @include mobile {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__info {
+  }
+
+  &__hello {
+    color: $primary-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 24px;
+  }
+
+  &__name {
+    color: $title-color;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 64px;
+    margin-bottom: 8px;
+    max-width: 466px;
+    @include mobile {
+      font-size: 28px;
+      line-height: 42px;
+      margin-bottom: 26px;
+    }
+  }
+
+  &__role {
+    color: $desc-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 24px;
+    max-width: 466px;
+  }
+
+  &__btn {
+  }
+
+  &__img {
+    flex-shrink: 0;
+    @include tablet {
+      flex-shrink: inherit;
+    }
+  }
+}

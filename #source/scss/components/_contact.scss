@@ -1,0 +1,142 @@
+.contact {
+  padding: 96px 0;
+
+  &__title {
+    color: $title-color;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 64px;
+    margin-bottom: 24px;
+    text-align: center;
+    span {
+      color: $primary-color;
+    }
+    @include mobile {
+      font-size: 28px;
+      line-height: 42px;
+    }
+  }
+
+  &__desc {
+    color: $desc-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 56px;
+    max-width: 685px;
+    text-align: center;
+    margin-inline: auto;
+    @include mobile {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    @include tablet-small {
+        flex-direction: column;
+      }
+  }
+}
+
+.details {
+  width: 347px;
+
+  @include tablet-small {
+    width: 100%;
+  }
+
+  &__data {
+    color: $title-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 41px;
+    margin-bottom: 16px;
+    span {
+      color: $primary-color;
+      font-weight: 700;
+    }
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  @include tablet-small {
+    width: 100%;
+  }
+  
+}
+.name {
+  display: block;
+  border: 0;
+  outline: 0;
+  width: 350px;
+  height: 63px;
+  flex-shrink: 0;
+  background: $form-color;
+  padding: 11px 18px;
+  margin-bottom: 32px;
+
+  color: $title-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 41px;
+
+  @include tablet-small {
+    width: 100%;
+  }
+  
+ 
+}
+
+.name::placeholder {
+  color: $title-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 41px;
+}
+
+.textarea {
+  display: block;
+  border: 0;
+  outline: 0;
+  width: 540px;
+  min-height: 166px;
+  max-height: 300px;
+  flex-shrink: 0;
+  background: $form-color;
+  padding: 11px 18px;
+  margin-bottom: 32px;
+
+  resize: vertical;
+
+  color: $title-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 41px;
+  @include tablet {
+    width: 350px;
+  }
+
+  @include tablet-small {
+    width: 100%;
+  }
+}
+
+.textarea::placeholder {
+  color: $title-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 41px;
+}
+.submit_btn {
+  width: 123px;
+  padding: 16px 20px;
+}
+
+.contact__btn {
+  padding: 16px 20px;
+}
