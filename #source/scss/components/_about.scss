@@ -14,6 +14,12 @@
 
   &__pic {
     position: relative;
+    /*@include tablet-small {
+      min-width: 40%;
+    }*/
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &__square {
@@ -36,7 +42,7 @@
 
   &__img {
     padding: 0 0 36px 36px;
-    /*@include tablet {
+      /*@include tablet {
         padding: 0 0 18px 18px;
     }
     @include mobile {
@@ -46,22 +52,32 @@
 
   &__info {
     max-width: 509px;
+
+    @include tablet {
+      max-width: 380px;
+    }
+    @include tablet-small {
+      max-width: 300px;
+    }
+    @include mobile {
+      max-width: 100%;
+    }
   }
 
   &__title {
     color: $title-color;
-    font-size: 42px;
+    font-size: 42rem;
     font-weight: 700;
-    line-height: 64px;
+    line-height: 64rem;
     margin-bottom: 32px;
     span {
       color: $primary-color;
     }
-    @include mobile {
+    /*@include mobile {
       font-size: 28px;
       line-height: 42px;
       margin-bottom: 26px;
-    }
+    }*/
   }
 
   &__desc {

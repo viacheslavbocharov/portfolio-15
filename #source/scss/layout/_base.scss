@@ -4,6 +4,16 @@ body{
     color: $body-color;
 }
 
+html{
+    font-size: 1px;
+    @include tablet-small {
+        font-size: 0.8px;
+      }
+     @include mobile {
+      font-size: 0.65px;
+    }
+}
+
 .container{
     max-width: calc(1108px + 40px);
     padding: 0 20px;

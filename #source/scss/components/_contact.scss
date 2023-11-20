@@ -3,18 +3,18 @@
 
   &__title {
     color: $title-color;
-    font-size: 42px;
+    font-size: 42rem;
     font-weight: 700;
-    line-height: 64px;
+    line-height: 64rem;
     margin-bottom: 24px;
     text-align: center;
     span {
       color: $primary-color;
     }
-    @include mobile {
+    /*@include mobile {
       font-size: 28px;
       line-height: 42px;
-    }
+    }*/
   }
 
   &__desc {
